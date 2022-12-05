@@ -12,3 +12,16 @@ const fun = (str) =>
 
 //test the result
 console.log(fun(string1));
+
+// above solution actuallly is replace all non-alphabet characters with single Space
+//  here's solution to remove instead of replace.
+const fun2 = (str) =>
+  str
+    .toLowerCase()
+    .trim()
+    .split(/\s+\b/)
+    .map((elm) => elm.replaceAll(/\W/g, ""))
+    .join(" ");
+
+let test = fun2(string1);
+console.log(fun2(string1));

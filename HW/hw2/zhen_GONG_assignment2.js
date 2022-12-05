@@ -42,6 +42,19 @@ const fun = (str) =>
 
 //test the result
 console.log(fun(string1));
+
+// above solution actuallly is replace all non-alphabet characters with single Space
+//  here's solution to remove instead of replace.
+const fun2 = (str) =>
+  str
+    .toLowerCase()
+    .trim()
+    .split(/\s+\b/)
+    .map((elm) => elm.replaceAll(/\W/g, ""))
+    .join(" ");
+
+let test = fun2(string1);
+console.log(fun2(string1));
 /********************************************************* */
 //question 3
 const first = [
@@ -75,7 +88,6 @@ let result = (first, second) =>
   sortId([...first, ...second]).reduce((acc, curr) => {
     if (acc.length > 0 && curr.uuid == acc.at(-1).uuid) {
       acc.splice(-1, 1, comb(acc.at(-1), curr));
-      return acc;
     } else {
       acc.push(comb(curr, curr));
     }

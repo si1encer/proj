@@ -29,7 +29,6 @@ let result = (first, second) =>
   sortId([...first, ...second]).reduce((acc, curr) => {
     if (acc.length > 0 && curr.uuid == acc.at(-1).uuid) {
       acc.splice(-1, 1, comb(acc.at(-1), curr));
-      return acc;
     } else {
       acc.push(comb(curr, curr));
     }
