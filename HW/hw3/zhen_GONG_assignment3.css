@@ -1,0 +1,32 @@
+caption {
+  padding: 10px;
+  caption-side: bottom;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(212, 22, 98);
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 5rem;
+}
+td,
+th {
+  border: 1px solid rgb(25, 198, 71);
+  padding: 10px;
+}
+.thead {
+  color: rgb(150, 22, 22);
+}
+#name1 {
+  color: rgb(190, 193, 15);
+}
+.search {
+  border: auto;
+  border-radius: 5em;
+  margin: 5rem 0;
+}
+#select1 {
+  margin: 5rem 0;
+}

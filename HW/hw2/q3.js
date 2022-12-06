@@ -16,7 +16,7 @@ let sortId = (a) => {
     return a.sort((a, b) => a.uuid - b.uuid);
   } else return null;
 };
-// combine function integrate two obj, also make sure the property order
+// combine function integrate two obj, also make sure the property in order
 let comb = (a, b) => {
   let result = {};
   result.uuid = a.uuid;
